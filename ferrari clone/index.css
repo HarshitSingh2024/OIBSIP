@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins' sans-serif;
+}
+
+/*-------------------DOWN ICON----------------*/
+.down-icon {
+    font-size: 2rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 15px;
+}
+
+.down-icon i:nth-child(1) {
+    font-size: 3rem;
+}
+
+.down-icon i:nth-child(3) {
+    font-size: 1rem;
+}
+
+/*-------------------DOWN ICON CLOSE----------------*/
+
+/*-------------------HOME PAGE----------------*/
+#page1 {
+    background-image: url("assets/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/*-------------------NAVBAR----------------*/
+.navbar {
+    padding-top: 15px;
+    display: flex;
+    height: 10vh;
+    position: relative;
+
+}
+
+.navbar img {
+    margin: 0px 15px;
+}
+
+.navbar ul {
+    margin-top: 25px;
+}
+
+.navbar ul a {
+    z-index: 1000;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    padding: 10px 22px;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+}
+
+/*-------------------NAVBAR CLOSE----------------*/
+
+/*-------------------HOME PAGE CONTENT----------------*/
+#page1 .txt {
+    margin-top: 48vh;
+    color: white;
+    text-align: center;
+}
+
+#page1 .txt h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+#page1 .txt h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-weight: 10;
+}
+
+#page1 .txt h4 i {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+/*-------------------HOME PAGE CLOSE----------------*/
+
+/*-------------------PAGE TWO----------------*/
+#page2 {
+    padding-top: 10vh;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+/*-------------------WRAPPER----------------*/
+.wrapper {
+    margin: 5% 5% 0 5%;
+    width: 90%;
+    height: 50vh;
+    display: flex;
+}
+
+.wrapper .txt-ctn {
+    border-left: 2px solid white;
+    height: 50vh;
+    width: 50%;
+    transition: all 1s;
+}
+
+.wrapper .txt-ctn h2 {
+    margin: 5% 0 0 5%;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.wrapper .txt-ctn p {
+    margin: 5% 20% 0 5%;
+    font-size: 1rem;
+}
+
+.wrapper .txt-ctn h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-top: 30px;
+    font-weight: 10;
+    margin-left: 5%;
+}
+
+.wrapper .txt-ctn h4 i {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.wrapper .img-ctn {
+    height: 50vh;
+    width: 50%;
+    filter: brightness(75%);
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.wrapper .img-ctn img {
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.wrapper .img-ctn img:hover {
+    scale: 1.025;
+}
+
+/*------------------WRAPPER CLOSE----------------*/
+
+/*-------------------WRAPPER FOR NEXT CHILD----------------*/
+.wrapper .txt-ctn:nth-child(2) {
+    border-left-width: 0;
+    border-right: 2px solid white;
+    padding-left: 5%;
+}
+
+/*-------------------PAGE TWO CLOSE----------------*/
+
+/*-------------------PAGE THREE----------------*/
+
+#page3 {
+    width: 80%;
+    min-height: 60vh;
+    padding: 5% 10%;
+    background-color: black;
+}
+
+#page3 .upper {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+#page3 .lower {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+.gifs-ctn {
+    width: 50%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.gifs-ctn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 0.5s;
+}
+
+.gifs-ctn img:hover {
+    filter: grayscale(0%);
+    scale: 1.02;
+}
+
+#page3 .down-icon {
+    margin-top: 10%;
+}
+
+/*-------------------PAGE THREE CLOSE----------------*/
+
+/*-------------------PAGE FOUR----------------*/
+#container {
+    min-height: 50vh;
+    width: 100%;
+    padding-bottom: 10%;
+    background-color: black;
+}
+
+#page4 {
+    width: 90%;
+    min-height: 40vh;
+    margin: 0 5%;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    margin-bottom: 3%;
+}
+
+#page4 .ctn-1 {
+    width: 40%;
+    height: 40vh;
+    justify-content: flex-start;
+    position: absolute;
+}
+
+#page4 .txt-ctn-1 {
+    width: 40%;
+    height: 40vh;
+    background-size: contain;
+}
+
+#right-ctn,
+#right {
+    margin-left: 60%;
+    justify-content: flex-end;
+}
+
+#left {
+    background-image: url("assets/custom.jpg");
+    background-size: cover;
+}
+
+#left-1 {
+    background-image: url("assets/custom1.jpg");
+    background-size: cover;
+}
+
+#right {
+    background-image: url("assets/custom4.jpg");
+    background-size: cover;
+}
+
+#left-ctn,
+#left-ctn-1 {
+    border-left: 5px solid white;
+}
+
+#left-ctn h2,
+#left-ctn-1 h2 {
+    margin: 5% 2% 10% 2%;
+    text-transform: uppercase;
+}
+
+#left-ctn p,
+#left-ctn-1 p {
+    margin: 5% 2%;
+}
+
+#right-ctn h2 {
+    width: 95%;
+    margin: 5% 2%;
+    text-transform: uppercase;
+}
+
+#right-ctn p {
+    margin: 5% 2%;
+}
+
+#right-ctn {
+    border-right: 5px solid white;
+    text-align: right;
+}
+
+#page4 h4 {
+    margin-left: 2%;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-weight: 10;
+}
+
+#page4 h4 i {
+    font-size: 0.8rem;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#right-ctn h4 {
+    margin-right: 2%;
+}
+
+/*-------------------PAGE FOUR CLOSE----------------*/
+
+/*-------------------PAGE FIVE----------------*/
+#page5 {
+    width: 100%;
+    min-height: 90vh;
+    background-color: black;
+}
+
+#page5 h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+
+.gallery-ctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.gallery {
+    height: 400px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.gallery .img {
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+    object-fit: cover;
+}
+
+.gallery .img:hover {
+    opacity: 100%;
+}
+
+.gallery:hover {
+    width: 500px;
+}
+
+/*-------------------PAGE FIVE CLOSE----------------*/
+
+/*-------------------FOOTER OPEN-----------------*/
+#footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding-top: 5%;
+    background-color: black;
+    justify-content: space-around;
+    border-top: 1px solid rgba(255, 255, 255, 0.397);
+}
+
+#footer div {
+    height: 35vh;
+    padding: 20px 30px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer div:nth-child(2) {
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+}
+
+#footer p {
+    padding-top: 20px;
+}
+
+#footer div a {
+    text-decoration: none;
+    color: rgb(177, 177, 177);
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+#footer div li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#footer div a:nth-child(1) {
+    padding-top: 20px;
+}
+
+#footer div a:not(:first-child) {
+    padding-top: 15px;
+}
+
+#footer div a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#footer div h1 {
+    padding-bottom: 20px;
+}
+
+#footer div i {
+    padding-top: 10px;
+    font-size: 2rem;
+    color: rgb(177, 177, 177);
+}
+
+#footer div i span {
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+#footer div i:hover {
+    color: white;
+}
+
+/*-------------------FOOTER CLOSE-----------------*/
+
+
+
+
+
+
+
+/*-------------------Responsive Design----------------*/
+@media(max-width: 768px) {
+    .navbar ul a {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        padding: 5px 22px;
+    }
+
+    #page1 .txt {
+        margin: 30vh 5% 0 5%;
+    }
+
+    #page1 .txt h1 {
+        font-size: 3rem;
+    }
+
+    #page1 .txt h4 {
+        font-size: 1rem;
+    }
+
+    #page1 .txt h4 i {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        margin: 5% 8% 10% 8%;
+    }
+
+    #page4 .ctn-1 {
+        width: 70%;
+        height: 40vh;
+        background-size: cover;
+    }
+
+    #right-ctn {
+        width: 70%;
+        height: 40vh;
+        background-size: cover;
+    }
+
+    .txt-ctn-1 {
+        width: 30%;
+    }
+
+    .txt-ctn-1 h2 {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    .txt-ctn-1 p {
+        width: 70%;
+        font-size: 0.8rem;
+    }
+
+    #right {
+        margin-left: 30%;
+    }
+
+    #left-ctn h2,
+    #left-ctn-1 h2 {
+        margin: 1% 2% 1% 2%;
+    }
+
+    #left-ctn p,
+    #left-ctn-1 p {
+        margin: 1% 2%;
+    }
+
+    #right-ctn {
+        margin-left: 80%;
+        text-align: left;
+    }
+
+    #right-ctn h2 {
+        margin: 1% 2%;
+        text-transform: uppercase;
+    }
+
+    #right-ctn p {
+        margin: 1% 2%;
+        width: 100%;
+        font-size: 0;
+    }
+}
+
+/*-------------------PAGE THREE----------------*/
